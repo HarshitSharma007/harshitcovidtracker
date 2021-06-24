@@ -1,0 +1,45 @@
+
+.tt{
+  overflow:hidden; 
+ max-width: 2000px;
+}
+.card{
+
+  font-size:14px ;
+  font-weight: bold;
+border: black 2px solid;
+    width:400px;
+    height:250px;
+    background-color:cornsilk;
+    margin:10px;
+    text-align: center;
+
+
+}
+h1 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+    text-align: center;  
+}
+h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+h3{
+    font-size: 45px;
+    font-weight: 700;
+    text-shadow: 10px 7px 9px rgba(0,0,0,0.3);
+    
+}
+
+.container{
+    margin:10px;
+    max-width:2000px ;
+    display: flex;
+   justify-content: space-between;
+   background:cornflowerblue;
+   
+   flex-wrap: wrap;
+overflow:hidden;
+}
