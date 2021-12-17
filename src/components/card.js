@@ -4,12 +4,17 @@ import './card.css'
 const Card = () => {
 
     const [data,setdata]=useState([]);
-
+const settings = {
+        method: 'GET',
+        headers: {
+           "access-control-allow-origin": "*"
+        }
+    };
 
   const getcoviddata= async ()=>{
 
     try{
-          const t=  await  fetch("https://api.covid19india.org/data.json");
+          const t=  await  fetch("https://api.covid19india.org/data.json",settings);
              const z= await t.json();
          console.log(z);
        setdata(z.statewise[0]);
